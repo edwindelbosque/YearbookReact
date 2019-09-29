@@ -1,6 +1,16 @@
 import React from 'react';
 import './Person.css';
 
-// PERSON COMPONENT CODE GOES HERE
+const Person = ({ name, quote, superlative, photo }) => (
+  <article>
+    <h3>{name}</h3>
+    <img
+      src={photo}
+      alt={name}
+    />
+    <p>{quote}</p>
+    <p>{superlative}</p>
+  </article>
+);
 
 export default Person;

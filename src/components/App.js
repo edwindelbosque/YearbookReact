@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Turing Yearbook</h1>
+          <h1>Hall of Fame</h1>
         </header>
         <Cohort cohortType={staff} />
       </div>

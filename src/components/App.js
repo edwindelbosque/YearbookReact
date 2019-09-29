@@ -6,17 +6,18 @@ import './App.css';
 class App extends Component {
   constructor() {
     super();
-    this.state = { staff: people.staff };
+    this.state = { staff: people.staff, students: people.students };
   }
 
   render() {
-    const { staff } = this.state;
+    const { staff, students } = this.state;
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Hall of Fame</h1>
+          <h1>Turing Hall of Fame</h1>
         </header>
         <Cohort cohortType={staff} />
+        <Cohort cohortType={students} />
       </div>
     );
   }

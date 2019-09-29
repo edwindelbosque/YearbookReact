@@ -9,7 +9,7 @@ const Person = ({ name, quote, superlative, photo }) => (
         src={photo}
         alt={name}
       />
-      <p className="quote">{quote}</p>
+      <p className="quote">{`"${quote}"`}</p>
       <p className="superlative">{superlative}</p>
     </main>
   </article>

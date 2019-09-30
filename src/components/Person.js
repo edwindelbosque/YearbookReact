@@ -9,8 +9,8 @@ const Person = ({ name, quote, superlative, photo }) => (
         src={photo}
         alt={name}
       />
-      <p className="quote">{`"${quote}"`}</p>
-      <p className="superlative">{superlative}</p>
+      <p className="quote" contentEditable="true">{`"${quote}"`}</p>
+      <p className="superlative" contentEditable="true">{superlative}</p>
     </main>
   </article>
 );
